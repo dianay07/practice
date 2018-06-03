@@ -19,10 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{5CF5F80F-0345-45E2-B677-259FD86F8D56}</ProjectGuid>
+    <ProjectGuid>{FD7857A5-95B1-47F1-BFD7-BE962509D526}</ProjectGuid>
     <RootNamespace>OOP</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
-    <ProjectName>OOP</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -76,6 +75,9 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
     </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -83,6 +85,9 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
     </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -93,6 +98,7 @@
       <SDLCheck>true</SDLCheck>
     </ClCompile>
     <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
@@ -106,16 +112,12 @@
       <SDLCheck>true</SDLCheck>
     </ClCompile>
     <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="oop1.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="oop1.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
